@@ -1,0 +1,23 @@
+# on immporte la librairie qui contient plusieurs fonction aléatoires
+import random
+
+# On utilise nos différentes variables
+entree =-1
+reponse = random.randrange(100)# on utilise la fonction randrange qui permet de choisir un nombre entre 0 et le nombre entre (), ici 100
+compteur = 10
+
+# Tant que entree est différente de reponse et que compteur est plus grand que 0...
+while entree != reponse and compteur > 0 :
+  # on changer la valeur de entree avec celle tapée au clavier. Attention, convertion en int
+  entree =int(input("entre un nombre 0 et 100") ) 
+
+  if  entree < reponse :
+    print("la reponse est plus grand")
+  elif entree > reponse :
+    print("la reponse est plus petit")
+  else :   
+    print("BRAVOO")
+
+
+#Attention a changer la valeur du compteur pour evite un boucle infinie
+  compteur = compteur -1    
